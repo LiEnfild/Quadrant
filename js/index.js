@@ -19,7 +19,7 @@ function quadro(){
     }else if(D === 0){
         document.write("If D = 0, then only one rezult ");
         x1 = -b/(2*a);
-        document.write("x1  " + x1);
+        document.write("x1 = " + x1);
         return x1;
     }else{
         x1 = (-b + Math.sqrt(D))/(2*a);
