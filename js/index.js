@@ -1,16 +1,30 @@
 // JavaScript File
-var a = Number(prompt('Give me the a number!'));
-var b = Number(prompt('Give me the b number!'));
-var c = Number(prompt('Give me the c number!'));
-var x;
-
-Function result(a,b,c) {
-    var res=b*b-4*a*c
-    if (res>0) {
-        return x=[(-b-math.sqrt(res))/2*a, (-b+math.sqrt(res))/2*a)];
-    } else {
-        return x= "No rezult";
+function quadro(){
+    var a;
+    var b;
+    var c;
+    var D;
+    var x1, x2;
+    a = Number(prompt("Number a"));
+    if(a===0){
+        alert ("Must be no 0!");
+        a = Number(prompt("Number a"));
+    }
+    b = Number(prompt("Number b"));
+    c = Number(prompt("Number c"));
+    D = Math.pow(b,2) - 4*a*c;
+    if(D < 0){
+         document.write("No rezult");
+         return D;
+    }else if(D === 0){
+        document.write("If D = 0, then only one rezult ");
+        x1 = -b/(2*a);
+        document.write("x1  " + x1);
+        return x1;
+    }else{
+        x1 = (-b + Math.sqrt(D))/(2*a);
+        x2 = (-b - Math.sqrt(D))/(2*a);
+        document.write("x1 = " + x1 + "<br>");
+        document.write("x2 = " + x2 + "<br>");
     }
 }
-document.write(x);
-
