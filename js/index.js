@@ -1,10 +1,11 @@
 // JavaScript File
-function quadro(){
-    var a;
+var a;
     var b;
     var c;
     var D;
     var x1, x2;
+
+function quadro(){
     a = Number(prompt("Number a"));
     if(a===0){
         alert ("Must be no 0!");
