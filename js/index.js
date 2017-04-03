@@ -1,9 +1,9 @@
 // JavaScript File
 var a;
-    var b;
-    var c;
-    var D;
-    var x1, x2;
+var b;
+var c;
+var D;
+var x1, x2;
 
 function quadro(){
     a = Number(prompt("Number a"));
